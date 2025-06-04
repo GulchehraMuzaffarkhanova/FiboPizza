@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+@theme {
+  --color-yellow: #F7D22D;
+  --color-dark: #0E0C0D;
+  --color-grey: #797979;
+  --color-red: #FF2E65;
+  --color-light-grey: #F3F3F7;
+  --color-light-blue: #E3ECF5;
+  --color-dark-grey: #473E43;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid gray;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-yellow);
+}
+
+iframe {
+  margin-top: 32px;
+}
+
+.new_taste:hover {
+ padding-top: 8px;
+ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+ transition: 0.5s;
+}
+
+.pizza_card:hover {
+  padding-top: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.yellow_btn:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+  
+}
+
+
+
+
+@media screen and (max-width:768px){
+  .yandex {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+  .menu_icn {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .last_img {
+    display: none;
+  }
+}
