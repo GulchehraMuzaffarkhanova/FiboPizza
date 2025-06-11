@@ -10,7 +10,7 @@ import OrderBtn from './OrderBtn'
 
 const Footerright = () => {
 
-  const footer_right = [
+const footer_right = [
     {
       img:phone
     },
@@ -32,27 +32,29 @@ const Footerright = () => {
   ]
     
   return (
-    <div className='relative sm:mt-5 md:mt-5'>
-        <h1 className='text-[14px] font-bold text-dark'>Остались вопросы? А мы всегда на связи:</h1>
-        <div className='grid grid-cols-4 gap-[15px]'>
+    <div className='mt-[30px]'>
+        <p className='text-[15px] font-bold text-dark'>Остались вопросы? А мы всегда на связи:</p>
+      <div className='grid grid-cols-4  gap-[15px] py-[33px]'>
         {
           footer_right.map((item, index)=> {
             return(
-            <div key={index}>
-              <div className='border-3 border-light-blue rounded-[13px] px-5 py-3 flex items-center justify-center'><img src={item.img} alt="" /></div>
-            </div>
+              <div key={index} className='px-4 py-2 border-3 border-light-blue rounded-xl flex items-center justify-center'>
+                <img src={item.img} alt="" />
+              </div>
             )
           })
         }
-        <div className='lg:col-span-2 border-3 border-light-blue rounded-[13px] px-[60px] py-[18px] flex items-center justify-center'><span className='text-[14px] font-bold text-dark'>Написать нам</span></div>
+        <div className='border-3 border-light-blue rounded-xl flex items-center justify-center text-[13px] font-bold col-span-2'>
+          <span>Написать нам</span>
         </div>
-        <div className=''>
-        <p className='text-[30px] font-bold text-yellow my-[27px]'>8 499 391-84-49</p>
-        <OrderBtn text={'Заказать звонок'}/>
-        </div>
-{/*        <img className='last_img absolute right-0 -bottom-[55px] ' src={footericon} alt="" /> */}    
       </div>
-  )
+      
+      <div>
+        <p className='text-yellow text-[30px] font-bold py-[20px]'>8 499 391-84-49</p>
+        <OrderBtn text={'Заказать звонок'}/>
+      </div>
+    </div>
+  ) 
 }
 
 export default Footerright

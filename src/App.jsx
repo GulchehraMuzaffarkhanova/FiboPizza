@@ -12,11 +12,13 @@ import Paste from './pages/Paste'
 import Salad from './pages/Salad'
 import Soup from './pages/Soup'
 import 'swiper/css';
+import Modal from './components/Modal'
 
 const App = () => {
   return (
-    <div>
+    <>
        <Navbar />
+       {/* <Modal/> */}
        
        <Routes>
         <Route path='/' element={<><Hero /><NewTaste/></>}/>
@@ -31,12 +33,7 @@ const App = () => {
 
        {/* */} 
        <Footer/>
-
-       
-       
-       
-
-    </div>
+    </>
   )
 }
 

@@ -4,6 +4,7 @@ import mix from '../assets/mix.svg'
 import souse from '../assets/souse.svg'
 import mushroom from '../assets/mushroom.svg'
 import YellowBtn from './YellowBtn'
+import ProductsCard from './ProductsCard'
 
 const PizzaCard = () => {
 
@@ -154,22 +155,15 @@ const PizzaCard = () => {
     ]
 
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-3'>
         {
             pizza_card.map((item, index) => {
                 return(
-                    <div key={index} className='pizza_card w-[255px] h-[490px] rounded-[18px] pl-[5px] mt-[50px]'>
-                        <img src={item.img} alt="" />
-                        <h1 className='text-[24px] font-extrabold text-grey'>{item.name}</h1>
-                        <p className='text-[13px] font-[400] text-grey py-[12px]'>{item.text}</p>
-                        <div className='flex items-center gap-[5px]'>
-                            <span className='text-[22px] text-dark font-bold'>{item.price}</span>
-                            <YellowBtn text={'В корзину'} />
-                        </div>
-                    </div>
+                    <ProductsCard item={item} key={index}/>
                 )
             })
         }
+        
     </div>
   )
 }

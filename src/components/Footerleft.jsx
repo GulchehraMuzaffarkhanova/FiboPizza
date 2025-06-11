@@ -8,35 +8,31 @@ const Footerleft = () => {
   return (
     <div>
         <img src={logo} alt="" />
-        <div className='flex items-center gap-[50px] py-[25px]'>
-            <p className='font-bold text-dark'>Калорийность и состав</p>
+        <div className='block gap-15 py-4 sm:block md:flex lg:flex'>
+            <div className='font-bold text-dark'>
+                <p>Калорийность и состав</p>
+                <p className='py-5'>Мы в соцсетях</p>
+            </div>
             <p className='font-bold text-dark'>Правовая информация</p>
         </div>
-        <p className='font-bold text-dark'>Мы в соцсетях</p>
-        <ul className='flex items-center gap-[100px] py-[15px]'>
-            <div className=''>
-            <li className='text-dark-grey font-semibold'>
-               <a href="#YouTube">YouTube</a>
-            </li>
-            <li className='text-dark-grey font-semibold py-[15px]'>
-               <a href="#instagram">Instagram</a>
-            </li>
+        
+        <div className='block gap-15 py-4 sm:flex md:flex lg:flex '>
+            <div className='flex-col flex space-y-3 text-grey font-semibold'>
+                <a href="#youtube">YouTube</a>
+                <a href="#instagram ">Instagram</a>
             </div>
-            <div className=''>
-            <li className='text-dark-grey font-semibold'>
-               <a href="#Facebook">Facebook</a>
-            </li>
-            <li className='text-dark-grey font-semibold py-[15px]'>
-                <a href="#ВКонтакте">ВКонтакте</a>
-            </li>
+            <div className='flex-col flex space-y-3 text-grey font-semibold '>
+                <a href="#facebook">Facebook</a>
+                <a href="#oncontact">ВКонтакте</a>
             </div>
-            <div className=' w-[163px] leading-[23px]'>
-                <span className='text-[14px] text-dark-grey font-semibold'>Москва ул. Проспект Вернадского 86В</span>
+            <div className='font-semibold text-grey'>
+                <p className='w-[193px] h-[65px] -leading-4'>Москва ул. Проспект Вернадского 86В</p>
             </div>
-        </ul>
-        <div className='flex items-center gap-[157px]'>
-            <p className='text-[14px] font-semibold text-dark'>YaBao Все праав защищены © 2021</p>
-            <div className='credit_card flex items-center gap-[20px]'>
+        </div>
+
+        <div className='block gap-15 py-4 sm:block md:flex lg:flex'>
+            <p className='text-[14px] font-semibold'>YaBao Все праав защищены © 2021</p>
+            <div className='flex items-center gap-[23px]'>
                 <img src={visa} alt="" />
                 <img src={pay} alt="" />
                 <img src={nextpay} alt="" />

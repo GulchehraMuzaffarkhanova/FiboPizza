@@ -8,6 +8,7 @@ import pasta6 from "../assets/paste/pasta6.jpeg";
 import pasta7 from "../assets/paste/pasta7.jpeg";
 import pasta8 from "../assets/paste/pasta8.jpeg";
 import YellowBtn from "../components/YellowBtn";
+import ProductsCard from "../components/ProductsCard";
 
 const Paste = () => {
   
@@ -72,20 +73,14 @@ const Paste = () => {
   return (
     <div className="container">
       <h1 className="text-[32px] text-yellow font-extrabold">Паста</h1>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center">
-        {paste_card.map((item, index) => {
-          return (
-            <div key={index} className="pizza_card w-[255px] h-[490px] rounded-[18px] pl-[5px] mt-[50px]"onClick={() => setSelectedCard(item)}>
-              <img src={item.img} alt="" />
-              <h1 className="text-[24px] font-extrabold text-grey">{item.name}</h1>
-              <p className="text-[13px] font-[400] text-grey py-[12px]">{item.text}</p>
-              <div className="flex gap-[5px]">
-                <span className="text-[22px] text-dark font-bold">{item.price}</span>
-                <YellowBtn text={"В корзину"} />
-              </div>
-            </div>
-          );
-        })}
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-3">
+      {
+            paste_card.map((item, index) => {
+                return(
+                    <ProductsCard item={item} key={index}/>
+                )
+            })
+        }
       </div>
     </div>
   );

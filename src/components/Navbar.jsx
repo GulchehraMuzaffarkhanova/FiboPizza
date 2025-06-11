@@ -52,7 +52,7 @@ const Navbar = () => {
           </div>
 
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="menu_icn lg:hidden">
-            <img className="" src={menuicon} alt="" />
+            <img className="w-7" src={menuicon} alt="" />
           </button>
         </div>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
           <div className="flex gap-[10px]">
             <OrderBtn variant="bg-transparent" text={"Войти"} />
-            <YellowBtn text={"Корзина | 1"} />
+            <YellowBtn text={"Корзина | "} />
           </div>
         </div>
 
@@ -96,9 +96,7 @@ const Navbar = () => {
 
           <div className="flex flex-col items-center gap-4 mt-8">
             <p className="text-[18px] font-bold text-dark">8 499 391-84-49</p>
-            <button className="px-[25px] py-[7px] bg-white rounded-[8px]">
-              Корзина | 1
-            </button>
+            <button className="px-[25px] py-[7px] bg-white rounded-[8px]">Корзина | 1</button>
           </div>
         </div>
       </div>

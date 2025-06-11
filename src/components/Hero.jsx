@@ -20,7 +20,7 @@ const Hero = () => {
     <section className="container">
       <div className="mt-[40px]">
         <div className="flex items-center justify-center relative">
-          <button onClick={prevSlide} className="left-0 absolute w-[31px] z-10  h-[31px] rounded-full bg-yellow flex items-center justify-center">
+          <button onClick={prevSlide} className=" hero_btn left-0 absolute px-[10px] py-[7px] z-10 rounded-full bg-yellow flex items-center justify-center">
             <img src={leftcursor} alt="" />
           </button>
           <Swiper className="swiper grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2"
@@ -35,7 +35,7 @@ const Hero = () => {
             <SwiperSlide><img src={blackbg} alt="" /></SwiperSlide>
           </Swiper>
 
-          <button onClick={nextSlide} className="right-5 z-10 absolute w-[31px] h-[31px] rounded-full bg-yellow flex items-center justify-center">
+          <button onClick={nextSlide} className="hero_btn right-0 z-10 absolute px-[10px] py-[7px] rounded-full bg-yellow flex items-center justify-center">
             <img src={rightcursor} alt="" />
           </button>
         </div>
